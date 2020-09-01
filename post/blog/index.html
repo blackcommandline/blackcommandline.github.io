@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Blog // My New Hugo Site</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://blackcommandline.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Blog"/>
+<meta name="twitter:description" content="一些技巧 字典 dict_test = [] items = {&#39;a&#39;:&#39;1&#39;,&#39;b&#39;:&#39;2&#39;,&#39;c&#39;:&#39;3&#39;} for item in items: data = { &#39;x&#39;:items[&#39;a&#39;], &#39;y&#39;:items[&#39;b&#39;], &#39;z&#39;:items[&#39;c&#39;] } dict_test.append(data) for i in dict_test: res = &#39;{x},{y},{z}&#39;.format(**i) print(res) 结果 1,2,3 1,2,3 1,2,3
+a = [1,2,3,4,5] b = dict((c*2,c) for c in a) 结果： {2: 1, 4: 2, 6: 3, 8: 4, 10: 5} glob t1 = glob.glob(&lsquo;a*.jpg&rsquo;)
+并发 concurrent from concurrent import futures def fun(x): import time return time.ctime(),x def fun1(m,n): with futures."/>
+
+    <meta property="og:title" content="Blog" />
+<meta property="og:description" content="一些技巧 字典 dict_test = [] items = {&#39;a&#39;:&#39;1&#39;,&#39;b&#39;:&#39;2&#39;,&#39;c&#39;:&#39;3&#39;} for item in items: data = { &#39;x&#39;:items[&#39;a&#39;], &#39;y&#39;:items[&#39;b&#39;], &#39;z&#39;:items[&#39;c&#39;] } dict_test.append(data) for i in dict_test: res = &#39;{x},{y},{z}&#39;.format(**i) print(res) 结果 1,2,3 1,2,3 1,2,3
+a = [1,2,3,4,5] b = dict((c*2,c) for c in a) 结果： {2: 1, 4: 2, 6: 3, 8: 4, 10: 5} glob t1 = glob.glob(&lsquo;a*.jpg&rsquo;)
+并发 concurrent from concurrent import futures def fun(x): import time return time.ctime(),x def fun1(m,n): with futures." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blackcommandline.github.io/post/blog/" />
+<meta property="article:published_time" content="2020-09-01T17:04:22+08:00" />
+<meta property="article:modified_time" content="2020-09-01T17:04:22+08:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://blackcommandline.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <h1>My New Hugo Site</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+      <div class="app-header-social">
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Blog</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Sep 1, 2020
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      <h2 id="一些技巧">一些技巧</h2>
+<h2 id="字典">字典</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">dict_test <span style="color:#f92672">=</span> []
+items <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;a&#39;</span>:<span style="color:#e6db74">&#39;1&#39;</span>,<span style="color:#e6db74">&#39;b&#39;</span>:<span style="color:#e6db74">&#39;2&#39;</span>,<span style="color:#e6db74">&#39;c&#39;</span>:<span style="color:#e6db74">&#39;3&#39;</span>}
+<span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> items:
+	data <span style="color:#f92672">=</span> {
+		<span style="color:#e6db74">&#39;x&#39;</span>:items[<span style="color:#e6db74">&#39;a&#39;</span>],
+		<span style="color:#e6db74">&#39;y&#39;</span>:items[<span style="color:#e6db74">&#39;b&#39;</span>],
+		<span style="color:#e6db74">&#39;z&#39;</span>:items[<span style="color:#e6db74">&#39;c&#39;</span>]
+		}
+	dict_test<span style="color:#f92672">.</span>append(data)
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> dict_test:
+	res <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;{x},{y},{z}&#39;</span><span style="color:#f92672">.</span>format(<span style="color:#f92672">**</span>i) 
+	<span style="color:#66d9ef">print</span>(res)
+</code></pre></div><p>结果
+1,2,3
+1,2,3
+1,2,3</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>]
+b <span style="color:#f92672">=</span> dict((c<span style="color:#f92672">*</span><span style="color:#ae81ff">2</span>,c) <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> a)
+<span style="color:#960050;background-color:#1e0010">结果：</span>
+{<span style="color:#ae81ff">2</span>: <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>: <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">6</span>: <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">8</span>: <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">10</span>: <span style="color:#ae81ff">5</span>}
+</code></pre></div><p>glob
+t1 = glob.glob(&lsquo;a*.jpg&rsquo;)</p>
+<h2 id="并发-concurrent">并发 concurrent</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> concurrent <span style="color:#f92672">import</span> futures
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fun</span>(x):
+    <span style="color:#f92672">import</span> time
+    <span style="color:#66d9ef">return</span> time<span style="color:#f92672">.</span>ctime(),x
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fun1</span>(m,n):
+    <span style="color:#66d9ef">with</span> futures<span style="color:#f92672">.</span>ProcessPoolExecutor(max_workers<span style="color:#f92672">=</span>m) <span style="color:#66d9ef">as</span> executor:
+        executor_dict <span style="color:#f92672">=</span> dict((executor<span style="color:#f92672">.</span>submit(fun,x),x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(m<span style="color:#f92672">*</span>n))
+        <span style="color:#66d9ef">print</span>(executor_dict)
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> futures<span style="color:#f92672">.</span>as_completed(executor_dict):
+        
+        times<span style="color:#f92672">=</span>executor_dict[i]
+        <span style="color:#66d9ef">if</span> i<span style="color:#f92672">.</span>exception() <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None:
+            <span style="color:#66d9ef">print</span>(i<span style="color:#f92672">.</span>exception())
+        <span style="color:#66d9ef">else</span>:
+            <span style="color:#66d9ef">print</span>(times,i<span style="color:#f92672">.</span>result())
+<span style="color:#75715e">#在此例子中if __name__ == &#34;__main__&#34;:一定要加，因为没有if __name__会在创建子进程的时候又会运行，导致错误</span>
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+    fun1(<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">2</span>)
+</code></pre></div><h2 id="requests响应内容乱码">requests响应内容乱码</h2>
+<p>response = requests.get(url)
+response.encoding = response.parrent_encoding</p>
+<h2 id="图片下载">图片下载</h2>
+<p>urllib.request.urlretrieve(url,name,os.path.splitext(url)[-1])</p>
+<h2 id="estalicsrearch-全文搜索引擎">estalicsrearch 全文搜索引擎</h2>
+<p><a href="https://developer.51cto.com/art/201904/594615.htm">https://developer.51cto.com/art/201904/594615.htm</a>
+<a href="https://blog.csdn.net/qq_38262266/article/details/90311086">https://blog.csdn.net/qq_38262266/article/details/90311086</a></p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
